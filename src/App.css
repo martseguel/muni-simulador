@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  /* Fondo oscuro para todo el cuerpo de la página */
+  color: white;
+  /* Texto en blanco para que sea legible en el fondo oscuro */
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +44,73 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.date-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.date-box {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.election-date {
+  text-align: center;
+}
+
+.election-date label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.election-date div {
+  justify-content: center;
+  display: flex;
+  gap: 1em;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.selectContainer {
+  margin-top: 0.5em;
+}
+
+.TER {
+  margin-bottom: 0;
+}
+
+.TERcont {
+  margin-top: 1em;
+}
+
+.submitDiv{
+  margin-top: 1em;
+}
+.submitBtn {
+  background-color: #4c774d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.submitBtn:hover {
+  background-color: #45a049;
 }
